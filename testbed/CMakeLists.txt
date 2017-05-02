@@ -1,7 +1,7 @@
 project(testbed)
 
 include_directories(../contrib/libevent ../common)
-link_directories(../lib)
+link_directories(${CMAKE_BUILD_DIR}/lib)
 
 set(EXECUTABLE_OUTPUT_PATH "../bin")
 

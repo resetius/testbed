@@ -31,6 +31,7 @@
 #include <map>
 #include <string>
 #include <list>
+#include <stdlib.h>
 
 #include "my_config.h"
 

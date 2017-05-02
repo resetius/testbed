@@ -59,7 +59,7 @@
 
 static struct GenConfig config;
 
-inline int my_rand_r(unsigned * seed)
+static inline int my_rand_r(unsigned * seed)
 {
 	*seed = *seed * 1103515245 + 12345;
 	return (*seed % ((u_int)RAND_MAX + 1));
