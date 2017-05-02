@@ -1,9 +1,9 @@
 project(testbed)
 
 include_directories(../contrib/libevent ../common)
-link_directories(${CMAKE_BUILD_DIR}/lib)
+link_directories(${CMAKE_BINARY_DIR}/lib)
 
-set(EXECUTABLE_OUTPUT_PATH "../bin")
+set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
 
 add_definitions(-DIDEAL_HASHING)
 add_executable(testbed main.c markov.c gen_config.cpp)
